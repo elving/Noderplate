@@ -1,0 +1,20 @@
+{
+    "name": "Noderplate",
+    "version": "0.0.1",
+
+    "description": "A simple node.js web app boilerplate.",
+
+    "dependencies": {
+        "coffee-script": "1.2.0",
+        "express": "2.4.6",
+        "eco": "1.1.0-rc-3",
+        "stylus": "0.24.0",
+        "underscore": "1.3.1",
+        "async": "0.1.18",
+        "stitch": "0.3.3"
+    },
+
+    "engines": {
+        "node": "0.6.x"
+    }
+}

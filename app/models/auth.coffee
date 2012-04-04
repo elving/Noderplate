@@ -1,0 +1,3 @@
+module.exports.isLoggedin = ->
+    #Some auth logic here...
+    yes

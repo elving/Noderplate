@@ -1,0 +1,2 @@
+<p>Log in sucka!</p>
+<p class="random-useless-message"><%= @message %></p>
