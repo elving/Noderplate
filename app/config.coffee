@@ -26,6 +26,7 @@ module.exports = (app, express) ->
         stylus(require('fs').readFileSync "#{__dirname}/public/styles/main.styl", 'utf8')
         .set('compress', yes)
         .set('force', yes)
+        .include("#{__dirname}/public/vendor")
         .include("#{__dirname}/public/styles")
         .render (err, css) -> unless err
             res.writeHead 200, 'Content-Type': 'text/css'
