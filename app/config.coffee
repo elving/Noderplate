@@ -12,7 +12,7 @@ module.exports = (app, express) ->
         app.use express.session secret: process.env.SESSION_SECRET or 'x0_Noderplate_0x'
         app.use express.static "#{__dirname}/public"
 
-    package = stitch.createPackage
+    appPackage = stitch.createPackage
         paths: ["#{__dirname}/public"]
         dependencies: [
             "#{__dirname}/public/vendor/jquery.js"
@@ -20,7 +20,7 @@ module.exports = (app, express) ->
             "#{__dirname}/public/vendor/backbone.js"
         ]
 
-    app.get '/app.js', package.createServer()
+    app.get '/app.js', appPackage.createServer()
 
     app.get '/styles/main.css', (req, res) ->
         stylus(require('fs').readFileSync "#{__dirname}/public/styles/main.styl", 'utf8')
