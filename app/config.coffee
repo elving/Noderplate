@@ -16,7 +16,7 @@ module.exports = (app, express) ->
         paths: ["#{__dirname}/public"]
         dependencies: [
             "#{__dirname}/public/vendor/jquery.js"
-            "#{__dirname}/public/vendor/underscore.js"
+            "#{__dirname}/public/vendor/lodash.js"
             "#{__dirname}/public/vendor/backbone.js"
         ]
 
